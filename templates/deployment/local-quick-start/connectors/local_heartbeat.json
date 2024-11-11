@@ -1,5 +1,5 @@
 {
-  "name": "heartbeat",
+  "name": "my_hearbeat",
   "identity": "heartbeat",
   "connector": "local_heartbeat",
   "key": "",
