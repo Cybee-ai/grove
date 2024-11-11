@@ -71,6 +71,7 @@ class BaseConnector:
         # those types of log data.
         self.key = self.configuration.key
         self.kind = self.__class__.__module__
+        self.name = self.configuration.name
         self.identity = self.configuration.identity
         self.operation = self.configuration.operation
 
@@ -503,6 +504,7 @@ class BaseConnector:
             "collection_time": datetime.datetime.utcnow().strftime(DATESTAMP_FORMAT),
             "runtime": self.runtime_context,
             "version": __version__,
+            "provided_name": self.name,
         }
 
     def cache_key(self, prefix: str = CACHE_KEY_POINTER) -> str:

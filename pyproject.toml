@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "grove"
+name = "cybee-grove"
 readme = "README.md"
 description = "A Software as a Service (SaaS) log collection framework."
 requires-python = ">=3.9"
